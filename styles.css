@@ -1,0 +1,234 @@
+/* FONTS */
+@font-face {
+  font-family: 'DeviceTM';
+  src: url('DeviceTM-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SRCMedium';
+  src: url('64-src-medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* BODY */
+body {
+  margin: 0;
+  font-family: 'SRCMedium', Arial, sans-serif;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  flex-direction: column;
+}
+
+/* HEADER */
+header {
+  height: 100px;
+  background-color: #191919;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  font-size: 30px;
+  letter-spacing: 1px;
+  font-family: 'DeviceTM', sans-serif;
+  padding-left: clamp(20px, 15vw, 312px);
+  padding-right: clamp(20px, 15vw, 312px);
+  box-sizing: border-box;
+}
+
+/* LEFT: LOGO */
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  width: 147px;
+  height: 44px;
+}
+
+/* MIDDLE: NAV LINKS */
+nav {
+  display: flex;
+  gap: 20px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-family: 'DeviceTM', sans-serif;
+  letter-spacing: 1px;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* RIGHT: HEADER BUTTONS */
+.header-buttons {
+  display: flex;
+  gap: 20px;
+}
+.pt-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 30px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  font-family: 'DeviceTM', sans-serif;
+}
+.donate-btn {
+  background-color: #FE5C45;
+  border: none;
+  color: white;
+  font-family: 'DeviceTM', sans-serif;
+  width: 147px;  
+  height: 44px;
+  font-size: 30px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+/* FIRST SECTION BELOW HEADER */
+.first-section {
+  height: 860px;
+  background-image: url('background.jpg'); 
+  background-size: cover;   
+  background-position: center; 
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.section-content {
+  width: 100%;
+  padding-left: clamp(20px, 15vw, 312px);
+  padding-right: clamp(20px, 15vw, 312px);
+  box-sizing: border-box;
+}
+
+/* DONATION BOX */
+.donation-box {
+  width: 400px;
+  height: 400px;
+  background-color: white;
+  padding: 28px 20px 19px 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  color: black;
+  text-align: center;
+}
+
+.donation-box h2 {
+  font-size: 30px;
+  letter-spacing: 1px;
+  margin: 0 0 20px 0; 
+  font-family: 'DeviceTM', sans-serif;
+}
+
+/* Buttons container */
+.donation-buttons {
+  display: flex; 
+  gap: 0; 
+  flex-wrap: wrap; 
+}
+.donation-buttons button {
+  flex: 1; 
+  background: none;
+  border: 1px solid black;
+  font-size: 30px;
+  letter-spacing: 1px;
+  padding: 10px 0; 
+  cursor: pointer;
+  font-family: 'DeviceTM', sans-serif;
+  border-right: none;
+}
+.donation-buttons button:last-child {
+  border-right: 1px solid black; 
+}
+.donation-buttons button:hover {
+  background-color: #f0f0f0; 
+}
+
+/* MISSION SECTION */
+.mission-section {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.mission-container {
+  display: flex;
+  gap: 40px; 
+  padding-left: clamp(20px, 15vw, 312px);
+  padding-right: clamp(20px, 15vw, 312px);
+  box-sizing: border-box;
+  width: 100%;
+  align-items: stretch; /* match heights */
+}
+
+.mission-left, .mission-right {
+  width: 628px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Left Box Styling */
+.mission-left {
+  justify-content: flex-start;
+}
+
+/* Title */
+.mission-title {
+  font-size: 48px; 
+  letter-spacing: 1px;
+  font-weight: bold;
+  margin: 0 0 20px 0; 
+  text-align: left;
+  font-family: 'DeviceTM', sans-serif;
+}
+
+/* Subtitle */
+.mission-subtitle {
+  font-size: 24px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  margin: 0 0 20px 0;
+  text-align: left;
+  font-family: 'DeviceTM', sans-serif;
+}
+
+/* Paragraphs */
+.mission-text {
+  font-family: 'SRCMedium', sans-serif;
+  text-align: left;
+}
+.mission-text p {
+  margin: 0 0 12px 0;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+/* Right Box Styling */
+.mission-right {
+  justify-content: flex-start; 
+}
+.mission-right img {
+  width: 100%;
+  height: 100%; 
+  object-fit: cover; 
+  display: block;
+  border-radius: 0px; 
+}
