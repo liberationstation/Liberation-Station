@@ -429,3 +429,38 @@ nav a:hover {
   font-family: 'SRCMedium', sans-serif;
   line-height: 1.4;
 }
+
+
+
+/* PARTNERSHIPS SECTION */
+.partnerships-section {
+  background-color: #F1F2EC;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.partnerships-container {
+  padding-left: clamp(20px, 15vw, 312px);
+  padding-right: clamp(20px, 15vw, 312px);
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.partnerships-title {
+  font-size: 50px;
+  letter-spacing: 1px;
+  margin-bottom: 65px;
+  font-family: 'DeviceTM', sans-serif;
+}
+
+.partnerships-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 111px;
+}
+
+.partnerships-logos img {
+  height: 90px;
+  width: auto;
+}
