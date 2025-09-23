@@ -60,9 +60,11 @@
 
 <!-- Payment method selection -->
 <div class="payment-methods">
-  <button class="payment-btn" data-method="paypal">PayPal</button>
-  <button class="payment-btn" data-method="mbway">MB WAY</button>
+  <button class="payment-btn" id="paypal-btn">PayPal</button>
+  <button class="payment-btn" id="mbway-btn">MB WAY</button>
 </div>
+
+  <div id="paypal-button-container"></div>
 
   <!-- Donate button -->
   <button id="donate-btn" class="donate-btn">Proceed</button>
@@ -366,4 +368,8 @@ They lost everything. Give what you can.</p>
 </div>
     
 </body>
+
+<script src="https://www.paypal.com/sdk/js?client-id=AUvW8FT9_m9Vz4r3rIkHWatJoUACow2fTawAelRz3dzusVFfQlrWR_jxbwcd1SdpqOYTGvNaE466uAOC&currency=EUR"></script>
+
+<script src="donation.js"></script>
 </html>

@@ -249,8 +249,11 @@ nav a:hover {
   background-color: #e64f3e; /* slightly darker on hover */
 }
 
-
-
+.donation-buttons button.active,
+.payment-btn.active {
+  background-color: #FE5C45;
+  color: white;
+}
 
 
 
