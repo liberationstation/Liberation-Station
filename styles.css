@@ -436,7 +436,7 @@ nav a:hover {
 .partnerships-section {
   background-color: #F1F2EC;
   padding-top: 120px;
-  padding-bottom: 120px;
+  padding-bottom: 170px;
 }
 
 .partnerships-container {
@@ -463,4 +463,59 @@ nav a:hover {
 .partnerships-logos img {
   height: 90px;
   width: auto;
+}
+
+
+
+
+
+
+footer {
+  height: 100px;
+  background-color: #191919;
+  display: flex;
+  align-items: center;
+  position: relative; 
+}
+
+/* Container for left and right only */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-left: clamp(20px, 15vw, 312px);
+  padding-right: clamp(20px, 15vw, 312px);
+  box-sizing: border-box;
+  color: white;
+  font-family: 'DeviceTM', sans-serif;
+  position: relative;
+}
+
+/* Middle links centered absolutely */
+.footer-middle {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 20px;
+}
+
+.footer-middle a {
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+/* Left */
+.footer-left span {
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+/* Right */
+.footer-right span {
+  font-size: 12px;
+  letter-spacing: 1px;
 }
