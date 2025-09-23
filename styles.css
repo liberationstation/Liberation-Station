@@ -353,7 +353,7 @@ nav a:hover {
 
 /* Event description */
 .event-description {
-  font-size: 14px;
+  font-size: 12px;
   margin: 0 0 17px 0;
   line-height: 1.4;
   font-family: 'SRCMedium', sans-serif;
@@ -370,4 +370,62 @@ nav a:hover {
   font-family: 'DeviceTM', sans-serif;
   letter-spacing: 1px;
   width: 100%;
+}
+
+
+
+
+
+
+
+/* FAQ SECTION */
+.faq-section {
+  background-color: #FE5C45;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.faq-container {
+  padding-left: clamp(20px, 15vw, 312px);
+  padding-right: clamp(20px, 15vw, 312px);
+  box-sizing: border-box;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* Section Title */
+.faq-title {
+  font-size: 50px;
+  letter-spacing: 1px;
+  text-align: center;
+  margin: 0 0 60px 0;
+  font-family: 'DeviceTM', sans-serif;
+}
+
+/* FAQ Grid */
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+}
+
+/* FAQ Column */
+.faq-column {
+  display: flex;
+  flex-direction: column;
+}
+
+/* FAQ Question */
+.faq-question {
+  font-size: 30px;
+  margin: 0 0 20px 0;
+  font-family: 'DeviceTM', sans-serif;
+}
+
+/* FAQ Answer */
+.faq-answer {
+  font-size: 12px;
+  margin: 0 0 20px 0;
+  font-family: 'SRCMedium', sans-serif;
+  line-height: 1.4;
 }
