@@ -294,7 +294,7 @@ nav a:hover {
   flex-direction: column;
   box-sizing: border-box;
   width: 100%; 
-  max-width: 100%; /* let it stretch inside the grid */
+  max-width: 100%;
 }
 
 /* Event image */
@@ -311,22 +311,49 @@ nav a:hover {
   flex-grow: 1;
 }
 
+/* Top row: date + location */
 .event-top {
   display: flex;
   justify-content: space-between;
   font-size: 20px;
   margin-bottom: 10px;
+  font-family: 'DeviceTM', sans-serif;
+}
+
+/* Title + live label row */
+.event-title-row {
+  display: flex;
+    align-items: flex-start;
+  gap: 10px;
 }
 
 .event-name {
   font-size: 30px;
   letter-spacing: 1px;
-  margin: 0 0 20px 0;
+  margin: 0;
   font-family: 'DeviceTM', sans-serif;
+  line-height: 1;
+  margin-bottom: 20px;
 }
 
+/* LIVE STREAMING label */
+.live-label {
+  background-color: black;
+  color: white;
+  font-size: 20px; /* match event-name */
+  padding: 5px 10px;
+  font-family: 'DeviceTM', sans-serif;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Event description */
 .event-description {
-  font-size: 15px;
+  font-size: 14px;
   margin: 0 0 20px 0;
   line-height: 1.4;
   font-family: 'SRCMedium', sans-serif;
@@ -341,5 +368,6 @@ nav a:hover {
   font-size: 30px;
   cursor: pointer;
   font-family: 'DeviceTM', sans-serif;
+  letter-spacing: 1px;
   width: 100%;
 }
