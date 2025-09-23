@@ -80,7 +80,7 @@ nav a:hover {
   cursor: pointer;
   font-family: 'DeviceTM', sans-serif;
 }
-.donate-btn {
+.donate-btn-header {
   background-color: #FE5C45;
   border: none;
   color: white;
@@ -117,9 +117,8 @@ nav a:hover {
 /* DONATION BOX */
 .donation-box {
   width: 400px;
-  height: 400px;
   background-color: white;
-  padding: 28px 20px 19px 20px;
+  padding: 28px 20px 28px 20px; /* more balanced bottom padding */
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -128,6 +127,7 @@ nav a:hover {
   text-align: center;
 }
 
+/* Title */
 .donation-box h2 {
   font-size: 30px;
   letter-spacing: 1px;
@@ -135,29 +135,129 @@ nav a:hover {
   font-family: 'DeviceTM', sans-serif;
 }
 
-/* Buttons container */
+/* Amount buttons container */
 .donation-buttons {
   display: flex; 
   gap: 0; 
   flex-wrap: wrap; 
 }
+
 .donation-buttons button {
   flex: 1; 
+  height: 60px;
   background: none;
   border: 1px solid black;
   font-size: 30px;
   letter-spacing: 1px;
-  padding: 10px 0; 
   cursor: pointer;
   font-family: 'DeviceTM', sans-serif;
   border-right: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 .donation-buttons button:last-child {
   border-right: 1px solid black; 
 }
+
 .donation-buttons button:hover {
   background-color: #f0f0f0; 
 }
+
+/* Spacer */
+.donation-spacer {
+  height: 20px;
+}
+
+/* Custom amount container */
+.custom-amount-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* label left, input right */
+  border: 1px solid black;
+  padding: 0 10px;
+  height: 60px; /* match buttons */
+  font-size: 30px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  font-family: 'DeviceTM', sans-serif;
+  background-color: white;
+}
+
+.custom-amount-container label {
+  font-size: 30px;
+  line-height: 1;
+}
+
+.custom-amount-container input {
+  width: 60px; /* adjust as needed */
+  font-size: 30px;
+  text-align: right;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: 'DeviceTM', sans-serif;
+}
+
+/* Payment methods container */
+.payment-methods {
+  display: flex;
+  gap: 0; /* buttons touch each other */
+  margin-bottom: 20px; /* spacing below buttons */
+}
+
+.payment-btn {
+  flex: 1; 
+  height: 60px; 
+  background: none;
+  border: 1px solid black;
+  font-size: 30px;
+  letter-spacing: 1px;
+  font-family: 'DeviceTM', sans-serif;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: none;
+}
+
+.payment-btn:last-child {
+  border-right: 1px solid black; 
+}
+
+.payment-btn:hover {
+  background-color: #f0f0f0;
+}
+
+/* Donate button */
+.donate-btn {
+  height: 60px;
+  background-color: #FE5C45;
+  border: none;
+  font-size: 30px;
+  letter-spacing: 1px;
+  font-family: 'DeviceTM', sans-serif;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.donate-btn:hover {
+  background-color: #e64f3e; /* slightly darker on hover */
+}
+
+
+
+
+
+
+
+
+
+
 
 /* MISSION SECTION */
 .mission-section {
