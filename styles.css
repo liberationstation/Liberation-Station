@@ -129,7 +129,7 @@ nav a:hover {
 
 /* Title */
 .donation-box h2 {
-    font-size: 1.8em;
+    font-size: 30px;
     letter-spacing: 0.05em;
     margin: 0 0 1.2em 0; 
     font-family: 'DeviceTM', sans-serif;
@@ -147,7 +147,7 @@ nav a:hover {
     height: 2.5em; /* shorter height */
     background: none;
     border: 1px solid black;
-    font-size: 1.5em;
+    font-size: 24px;
     letter-spacing: 0.05em;
     cursor: pointer;
     font-family: 'DeviceTM', sans-serif;
@@ -167,7 +167,7 @@ nav a:hover {
 
 /* Spacer */
 .donation-spacer {
-    height: 1em;
+    height: 1.2em;
 }
 
 /* Custom amount container */
@@ -178,21 +178,20 @@ nav a:hover {
     border: 1px solid black;
     padding: 0 0.8em;
     height: 2.5em; /* match button height */
-    font-size: 1.5em;
-    margin-bottom: 1.2em;
+    font-size: 24px;
     box-sizing: border-box;
     font-family: 'DeviceTM', sans-serif;
     background-color: white;
 }
 
 .custom-amount-container label {
-    font-size: 1.5em;
+    font-size: 24px;
     line-height: 1;
 }
 
 .custom-amount-container input {
     width: 3.5em;
-    font-size: 1.5em;
+    font-size: 24px;
     text-align: right;
     border: none;
     outline: none;
@@ -200,7 +199,7 @@ nav a:hover {
     font-family: 'DeviceTM', sans-serif;
 }
 
-/* Payment methods container */
+/* Payment methods container 
 .payment-methods {
     display: flex;
     gap: 0;
@@ -209,10 +208,10 @@ nav a:hover {
 
 .payment-btn {
     flex: 1; 
-    height: 2.5em; /* shorter height */
+    height: 2.5em;
     background: none;
     border: 1px solid black;
-    font-size: 1.5em;
+    font-size: 24px;
     letter-spacing: 0.05em;
     font-family: 'DeviceTM', sans-serif;
     cursor: pointer;
@@ -228,14 +227,14 @@ nav a:hover {
 
 .payment-btn:hover {
     background-color: #f0f0f0;
-}
+} */
 
-/* Donate button */
+/* Donate button 
 .donate-btn {
-    height: 2.5em; /* shorter height */
+    height: 2.5em; 
     background-color: #FE5C45;
     border: none;
-    font-size: 1.5em;
+    font-size: 24px;
     letter-spacing: 0.05em;
     font-family: 'DeviceTM', sans-serif;
     cursor: pointer;
@@ -247,7 +246,7 @@ nav a:hover {
 
 .donate-btn:hover {
     background-color: #e64f3e;
-}
+}*/
 
 .donation-buttons button.active,
 .payment-btn.active {
