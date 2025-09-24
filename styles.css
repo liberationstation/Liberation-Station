@@ -114,9 +114,28 @@ nav a:hover {
   box-sizing: border-box;
 }
 
-/* DONATION BOX */
+
+
+
+/*  DONATION BOX  */
+.donation-section {
+    position: absolute;                           
+    top: 58%;                                    
+    left: 0;                                     
+    padding-left: clamp(20px, 15vw, 312px);      
+    transform: translateY(-50%);                 
+    z-index: 10;                                 
+    width: auto;
+}
+
+.donation-wrapper {
+    width: 25em;                              
+    margin: 0;
+}
+
+/* Donation Box Styling */
 .donation-box {
-    max-width: 25em; /* slightly smaller and scalable */
+    max-width: 100%;                              
     background-color: white;
     padding: 2em 1.5em;
     box-sizing: border-box;
@@ -131,7 +150,7 @@ nav a:hover {
 .donation-box h2 {
     font-size: 30px;
     letter-spacing: 0.05em;
-    margin: 0 0 1.2em 0; 
+    margin: 0 0 0.8em 0; 
     font-family: 'DeviceTM', sans-serif;
 }
 
@@ -144,7 +163,6 @@ nav a:hover {
 
 .donation-buttons button {
     flex: 1; 
-    height: 2.5em; /* shorter height */
     background: none;
     border: 1px solid black;
     font-size: 24px;
@@ -177,7 +195,7 @@ nav a:hover {
     justify-content: space-between;
     border: 1px solid black;
     padding: 0 0.8em;
-    height: 2.5em; /* match button height */
+    height: 2.5em;
     font-size: 24px;
     box-sizing: border-box;
     font-family: 'DeviceTM', sans-serif;
@@ -199,62 +217,11 @@ nav a:hover {
     font-family: 'DeviceTM', sans-serif;
 }
 
-/* Payment methods container 
-.payment-methods {
-    display: flex;
-    gap: 0;
-    margin-bottom: 1.2em;
-}
-
-.payment-btn {
-    flex: 1; 
-    height: 2.5em;
-    background: none;
-    border: 1px solid black;
-    font-size: 24px;
-    letter-spacing: 0.05em;
-    font-family: 'DeviceTM', sans-serif;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-right: none;
-}
-
-.payment-btn:last-child {
-    border-right: 1px solid black; 
-}
-
-.payment-btn:hover {
-    background-color: #f0f0f0;
-} */
-
-/* Donate button 
-.donate-btn {
-    height: 2.5em; 
-    background-color: #FE5C45;
-    border: none;
-    font-size: 24px;
-    letter-spacing: 0.05em;
-    font-family: 'DeviceTM', sans-serif;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-}
-
-.donate-btn:hover {
-    background-color: #e64f3e;
-}*/
-
 .donation-buttons button.active,
 .payment-btn.active {
     background-color: #FE5C45;
     color: white;
 }
-
-
 
 
 
@@ -647,13 +614,23 @@ footer {
 
 
 
+@media (min-width: 1025px) {
+  .donation-buttons button {
+    height: 2.5em;
+  }
+}
+
+@media (max-width: 1024px) {
+  .donation-buttons button {
+    height: 65px;
+  }
+}
 
 
 
 
-
-/* ========== MOBILE (<1300px) ========== */
-@media (max-width: 1300px) {
+/* ========== MEDIA QUERIES ========== */
+@media (max-width: 1400px) {
 
   /* Header base */
   header {
@@ -666,7 +643,6 @@ footer {
     height: 80px;
   }
 
-  /* Logo left */
   .logo {
     flex: 0 0 auto;
     z-index: 400;
@@ -676,7 +652,6 @@ footer {
     height: 44px;
   }
 
-  /* Donate button centered */
   .donate-btn-header {
     position: absolute;
     left: 50%;
@@ -697,7 +672,7 @@ footer {
   .pt-btn {
     display: block;
     position: absolute;
-    right: 80px;      
+    right: 90px;      
     top: 50%;
     transform: translateY(-50%);
     height: 44px;
@@ -765,6 +740,9 @@ footer {
     margin: 20px 0;
     display: block;
   }
+  .donation-section {
+    padding-left: 44px;   
+}
 
   .section-content,
   .mission-container,
@@ -791,3 +769,110 @@ footer {
   }
 
 }
+
+
+
+@media (max-width: 1024px) {
+
+  .first-section {
+    position: relative;
+    height: 860px; /* background only */
+  }
+
+  /* Content inside hero (if any) sits on top of image */
+  .section-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Donation section moves below hero */
+  .donation-section {
+    position: relative;  
+    top: auto;
+    left: auto;
+    transform: none;     
+    padding: 0;           
+    margin-top: 0;       
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .donation-wrapper {
+    width: 100%;          
+    margin: 0;
+    padding: 0;           
+    max-width: none;      
+  }
+
+  .donation-box {
+    width: 100%;          
+    padding: 20px;        
+    box-sizing: border-box;
+  }
+
+  /* Stack donation buttons vertically */
+  .donation-buttons {
+    flex-direction: column;
+  }
+  
+  .donation-box h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+
+ .donation-buttons button {
+    flex: 1; 
+    background: none;
+    border: 1px solid black; 
+    border-top: none;         
+    font-size: 30px;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    font-family: 'DeviceTM', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* full width */
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  .donation-buttons button {
+    height: 65px !important; /* force override */
+  }
+
+  .donation-buttons button:first-child {
+    border-top: 1px solid black; 
+  }
+
+  /* Custom amount horizontal 50/50 */
+  .custom-amount-container {
+    flex-direction: row;      
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .custom-amount-container label,
+  .custom-amount-container input {
+    width: 48%;              
+    font-size: 30px;
+  }
+
+  .custom-amount-container input {
+    text-align: center;
+  }
+
+#paypal-button-container {
+    width: 100%;
+}
+
+  .donation-section + .mission-section {
+    margin-top: 40px;
+  }
+}
+
