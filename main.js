@@ -48,3 +48,4 @@ navLinks.forEach(link => {
     document.body.classList.remove('menu-open');
   });
 });
+

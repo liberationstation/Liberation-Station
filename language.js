@@ -13,6 +13,7 @@ const translations = {
   "donation_paypal": "PayPal",
   "donation_mbway": "MB WAY",
   "donation_proceed": "Prosseguir",
+"donation_info": "100% dos fundos angariados vão para famílias em Gaza. Começamos por apoiar quatro famílias em situações de emergência crítica. Depois, por cada €100 adicionais angariados, poderemos apoiar mais uma família.\n\nTodas as doações são processadas através da Associação Juvenil CulturMais, NIPC 510862110 (mais informações nas FAQs).",
 
  "mission_title": "Missão",
 "mission_subtitle": "PELA PALESTINA LIVRE! ACABE COM O GENOCÍDIO!",
