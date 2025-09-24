@@ -49,3 +49,9 @@ navLinks.forEach(link => {
   });
 });
 
+const donateBtn = document.querySelector('.donate-btn-header');
+const donationSection = document.getElementById('donation');
+
+donateBtn.addEventListener('click', () => {
+  donationSection.scrollIntoView({ behavior: 'smooth' });
+});
