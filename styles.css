@@ -13,10 +13,17 @@
   font-style: normal;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 /* BODY */
 body {
   margin: 0;
   font-family: 'SRCMedium', Arial, sans-serif;
+}
+
+body.menu-open {
+  overflow: hidden; /* disables scrolling */
 }
 
 /* HERO */
@@ -488,6 +495,7 @@ nav a:hover {
   font-size: 30px;
   margin: 0 0 20px 0;
   font-family: 'DeviceTM', sans-serif;
+  letter-spacing: 1px;
 }
 
 /* FAQ Answer */
@@ -624,6 +632,26 @@ footer {
   .donation-buttons button {
     height: 65px;
   }
+}
+
+
+/* Remove default link/button colors in Chrome */
+a, a:visited, a:active, a:hover,
+button, button:focus, button:active {
+    color: inherit;          /* inherit your defined color */
+    text-decoration: none;   /* remove underline */
+    outline: none;           /* remove focus outline if needed */
+    -webkit-appearance: none; /* removes Chrome default styles */
+    -moz-appearance: none;
+    appearance: none;
+}
+
+/* Specifically for your buttons */
+.donation-buttons button,
+.tickets-btn {
+    color: #191919;       /* or black depending on design */
+    background: none;   /* if needed */
+    border: 1px solid black;
 }
 
 
@@ -811,7 +839,7 @@ footer {
 
   .donation-box {
     width: 100%;          
-    padding: 20px;        
+    padding: 20px 150px;        
     box-sizing: border-box;
   }
 
@@ -874,5 +902,367 @@ footer {
   .donation-section + .mission-section {
     margin-top: 40px;
   }
+
+
+
+  /* Mission section */
+  .mission-section {
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .mission-container {
+    flex-direction: column;
+    gap: 20px; 
+    padding-left: 44px;
+    padding-right: 44px;
+    width: 100%;
+  }
+
+  .mission-left,
+  .mission-right {
+    width: 100%; 
+  }
+
+  .mission-right img {
+    height: auto; 
+  }
+
+
+    .events-grid {
+    grid-template-columns: 1fr;
+    gap: 20px; 
+  }
+
+
+.faq-section,
+.events-section,
+.partnerships-section {
+    padding-top: 44px;
+    padding-bottom: 44px;
 }
 
+
+    .faq-grid {
+    grid-template-columns: 1fr; 
+    gap: 20px; 
+  }
+
+  .faq-column {
+    text-align: left; 
+  }
+
+  .faq-question,
+  .faq-answer {
+    text-align: left; /* ensure individual elements are left-aligned */
+  }
+
+  /* Ensure container padding is respected */
+  .faq-container {
+    padding-left: 44px;
+    padding-right: 44px;
+  }
+
+
+    .partnerships-logos img {
+    height: 60px; /* smaller logos */
+    width: auto;  /* maintain aspect ratio */
+
+  }
+
+  .partnerships-logos {
+        gap: 44px;
+        padding-bottom: 55px;
+  }
+
+}
+
+
+
+
+@media (max-width: 600px) {
+
+  /* ---------- HEADER ---------- */
+  header {
+    padding: 20px;
+    height: auto; /* adapt if needed */
+  }
+
+  .logo img {
+    width: 93px;
+    height: 33px;
+  }
+
+  .donate-btn-header {
+    width: 93px;
+    height: 33px;
+    font-size: 24px;
+  }
+
+.menu-toggle,
+.pt-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+/* Burger icon aligned to right padding */
+.menu-toggle {
+    right: 20px; 
+}
+
+/* PT button to the left of burger icon */
+.pt-btn {
+    right: 60px; /* adjust spacing from burger icon */
+    width: 33px;
+    font-size: 24px;
+}
+
+  /* Full width menu */
+nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 70%; /* <-- changed from 100% to 70% */
+    background-color: #191919;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 20px;
+    transform: translateX(100%); /* hidden by default */
+    transition: transform 0.4s ease;
+    z-index: 600;
+}
+
+/* Slide in menu when active */
+nav.show {
+    transform: translateX(0);
+}
+
+/* Menu links inside */
+nav a {
+    font-size: 24px; /* smaller for mobile */
+    color: white;
+    text-decoration: none;
+    margin: 15px 0; /* lower gap */
+}
+  /* ---------- HERO / FIRST SECTION ---------- */
+  .section-content,
+  .donation-section {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  /* ---------- DONATION BOX ---------- */
+  .donation-box h2 {
+    font-size: 30px;
+  }
+
+  .donation-box {
+    padding: 20px 0;
+  }
+
+  .donation-buttons {
+    flex-direction: column;
+  }
+
+  .donation-buttons button {
+    font-size: 24px;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .custom-amount-container {
+    flex-direction: row;
+  }
+
+  .custom-amount-container input {
+    font-size: 24px;
+    text-align: right;
+  }
+      .custom-amount-container label, .custom-amount-container input {
+        font-size: 24px;
+    }
+
+    .custom-amount-container label {
+        text-align: left;
+
+    }
+
+  /* ---------- MISSION SECTION ---------- */
+  .mission-section {
+    padding: 20px;
+    flex-direction: column;
+  }
+
+  .mission-title {
+    font-size: 30px;
+  }
+
+  .mission-subtitle {
+    font-size: 18px;
+  }
+
+  .mission-left,
+  .mission-right {
+    width: 100%;
+  }
+
+  /* ---------- EVENTS SECTION ---------- */
+  .events-section {
+    padding: 20px;
+  }
+
+  .events-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .events-title {
+    font-size: 30px;
+  }
+
+  .tickets-btn {
+    font-size: 24px;
+    height: auto;
+    width: auto;
+    padding: 10px 20px;
+  }
+
+  .events-grid {
+    grid-template-columns: 1fr; /* one per row */
+    gap: 20px;
+  }
+
+  .events-header {
+   align-items: center;
+   margin-bottom: 20px;
+  }
+
+  .event-top {
+    font-size: 18px;
+  }
+
+  .event-name {
+    font-size: 24px;
+  }
+
+  .view-event-btn {
+    font-size: 24px;
+    height: auto;
+    padding: 10px 0;
+  }
+
+  /* ---------- FAQ SECTION ---------- */
+  .faq-section {
+    padding: 20px;
+  }
+
+  .faq-container,
+  .events-container,
+  .mission-container {
+    padding: 0;
+  }
+
+  .faq-title {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  .faq-question {
+    font-size: 18px;
+  }
+
+      .donation-section + .mission-section {
+        margin-top: 20px;
+      }
+
+
+      .partnerships-title {
+    font-size: 30px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    font-family: 'DeviceTM', sans-serif;
+}
+
+    .partnerships-logos {
+        gap: 35px;
+        padding-bottom: 35px;
+    }
+
+        .partnerships-logos img {
+        height: 50px;
+        width: auto;
+    }
+
+      .first-section {
+    height: 100vh;       /* full viewport height */
+    min-height: 100vh;   /* ensures it never shrinks */
+  }
+
+
+
+
+
+
+
+ footer {
+    background-color: #191919;
+    padding: 20px 0;        /* vertical spacing */
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: column; /* stack vertically */
+    align-items: center;    /* center horizontally */
+    gap: 10px;              /* vertical spacing between sections */
+    text-align: center;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+  }
+
+  /* Left section: LIBERATION STATION */
+  .footer-left {
+    order: 1;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: white;
+  }
+
+  /* Middle links */
+  .footer-middle {
+    order: 2;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;         /* horizontal spacing */
+    flex-wrap: wrap;   /* wrap links if needed */
+    position: static;  /* override absolute positioning */
+    transform: none;
+  }
+
+  .footer-middle a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+
+  /* Right section: copyright */
+  .footer-right {
+    order: 3;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: white;
+  }
+}
