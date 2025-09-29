@@ -22,7 +22,7 @@ menuToggle.addEventListener('click', (e) => {
   document.body.classList.toggle('menu-open', isOpen);
 });
 
-// Close when clicking outside
+
 document.addEventListener('click', (e) => {
   if (nav.classList.contains('show') && !nav.contains(e.target) && e.target !== menuToggle) {
     nav.classList.remove('show');
@@ -33,19 +33,20 @@ document.addEventListener('click', (e) => {
   }
 });
 
-// Prevent nav clicks from bubbling
+
 nav.addEventListener('click', (e) => {
   e.stopPropagation();
 });
 
-// Close menu when clicking a nav link
 navLinks.forEach(link => {
   link.addEventListener('click', () => {
-    nav.classList.remove('show');
-    nav.style.display = 'none';
-    menuImg.src = menuIcon;
-    menuImg.style.height = '44px';
-    document.body.classList.remove('menu-open');
+    if (window.getComputedStyle(menuToggle).display !== 'none') {
+      nav.classList.remove('show');
+      nav.style.display = 'none';
+      menuImg.src = menuIcon;
+      menuImg.style.height = '44px';
+      document.body.classList.remove('menu-open');
+    }
   });
 });
 
@@ -57,40 +58,4 @@ donateBtn.addEventListener('click', () => {
 });
 
 
-// ===== Donation Info Translation =====
-function translateDonationInfo(lang) {
-  const donationElements = [
-    "donation_info_part1",
-    "donation_info_part2",
-    "donation_info_part3",
-    "faq_link",
-    "donation_info_part4"
-  ];
 
-  donationElements.forEach(key => {
-    const el = document.querySelector(`[data-translate="${key}"]`);
-    if (!el) return;
-
-    if (lang === "pt" && translations[key + "_pt"]) {
-      el.textContent = translations[key + "_pt"];
-    } else if (lang === "en" && translations[key]) {
-      el.textContent = translations[key];
-    }
-  });
-}
-
-// Example: toggle language button
-const langBtn = document.querySelector('.pt-btn');
-let currentLang = 'en';
-
-langBtn.addEventListener('click', () => {
-  if (currentLang === 'en') {
-    translateDonationInfo('pt');
-    langBtn.textContent = 'EN';
-    currentLang = 'pt';
-  } else {
-    translateDonationInfo('en');
-    langBtn.textContent = 'PT';
-    currentLang = 'en';
-  }
-});
