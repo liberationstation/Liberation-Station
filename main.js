@@ -55,3 +55,5 @@ const donationSection = document.getElementById('donation');
 donateBtn.addEventListener('click', () => {
   donationSection.scrollIntoView({ behavior: 'smooth' });
 });
+
+

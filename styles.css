@@ -523,6 +523,17 @@ nav a:hover {
   line-height: 1.4;
 }
 
+/* FAQ links */
+.faq-section a.faq-link {
+    text-decoration: underline;              
+    cursor: pointer;            
+}
+
+.faq-section a.faq-link:hover {
+    color: #0056b3;              
+    text-decoration: underline;  
+}
+
 
 
 /* PARTNERSHIPS SECTION */
