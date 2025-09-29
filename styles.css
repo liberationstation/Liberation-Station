@@ -805,16 +805,16 @@ button, button:focus, button:active {
   .events-container {
     display: flex;
     flex-direction: column;
-    padding-left: 44px;   /* updated padding */
-    padding-right: 44px;  /* updated padding */
+    padding-left: 44px;  
+    padding-right: 44px;  
     box-sizing: border-box;
     width: 100%;
   }
 
   .events-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* always 2 columns */
-    gap: 40px; /* space between boxes */
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 40px; 
   }
 
 }
@@ -826,17 +826,17 @@ button, button:focus, button:active {
   .first-section {
     position: relative;
     width: 100%;
-    height: auto;           /* let content define height */
+    height: auto;           
     display: block;
     padding: 0;
     margin: 0;
   }
 
   .section-content {
-    position: relative;     /* no absolute */
+    position: relative;     
     width: 100%;
     max-width: 100%;
-    aspect-ratio: 16 / 9;   /* height follows width */
+    aspect-ratio: 16 / 9; 
     margin: 0 auto;
   }
 
@@ -896,20 +896,20 @@ button, button:focus, button:active {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%; /* full width */
+    width: 100%; 
     padding-top: 16px;
     padding-bottom: 16px;
   }
 
   .donation-buttons button {
-    height: 65px !important; /* force override */
+    height: 65px !important; 
   }
 
   .donation-buttons button:first-child {
     border-top: 1px solid black; 
   }
 
-  /* Custom amount horizontal 50/50 */
+ 
   .custom-amount-container {
     flex-direction: row;      
     justify-content: space-between;
