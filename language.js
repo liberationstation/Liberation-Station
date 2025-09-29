@@ -15,12 +15,11 @@ const translations = {
   "donation_proceed": "Prosseguir",
 "donation_info": "100% dos fundos angariados vão para famílias em Gaza. Começamos por apoiar quatro famílias em situações de emergência crítica. Depois, por cada €100 adicionais angariados, poderemos apoiar mais uma família.\n\nTodas as doações são processadas através da Associação Juvenil CulturMais, NIPC 510862110 (mais informações nas FAQs).",
 
- "mission_title": "Missão",
-"mission_subtitle": "PELA PALESTINA LIVRE! ACABE COM O GENOCÍDIO!",
+"mission_title": "Missão",
 "mission_text_1": "A Liberation Station nasceu da urgência de denunciar a forma como Israel e as suas estruturas de apoio utilizam a cultura e a música para lavar a sua imagem internacional e normalizar um genocídio em curso. Esta estratégia de branqueamento não é nova, já a vimos em eventos recentes, mas vimos também como a ação coletiva e o boicote podem desmontá-la.",
 "mission_text_2": "O gatilho para a nossa iniciativa foi o Weekender da HÖR em Lisboa, uma plataforma que se apresenta como neutra, mas que na prática censurou artistas e cancelou vozes solidárias com a Palestina. Decidimos responder de forma criativa e solidária, desenvolvemos a nossa iniciativa de forma a coincidir nas mesmas datas com os mesmos meios de difusão: a música, o clubbing, o streaming e as community radios, tudo isto em simultâneo com uma campanha de angariação de fundos para Gaza.",
 "mission_text_3": "De 30 de setembro a 5 de outubro, vamos organizar 9 eventos em 5 localidades de norte a sul do país, com transmissões em direto e em espaços de referência da cena underground e alternativa. Tudo de forma voluntária, sem fins lucrativos, com o único propósito de juntar forças, levantar vozes e canalizar recursos para quem mais precisa.",
-"mission_text_4": "O nosso projeto afirma-se como um espaço de solidariedade ativa. Toda a angariação de fundos reverte para famílias em Gaza. Através dos nossos parceiros, estamos em contacto direto com várias famílias, das quais identificámos 4 como prioritárias devido a situações de maior urgência. Estas recebem apoio garantido. Depois, a cada €100 adicionais que conseguirmos angariar, permitirá apoiar mais uma das nossas famílias. Todas as transferências serão documentadas e publicadas posteriormente de forma a garantir total transparência.",
+"mission_text_4": "O nosso projeto afirma-se como um espaço de solidariedade ativa. Toda a angariação de fundos reverte para famílias em Gaza. Com o apoio e aconselhamento de parceiros nossos que mantêm amizade e contacto regular com várias famílias, no final da campanha faremos a distribuição priorizando aquelas em situação mais crítica. Todas as transferências serão documentadas e publicadas posteriormente de forma a garantir transparência.",
 "mission_text_5": "A Liberation Station é música, solidariedade e resistência. É a prova de que a cultura não tem de ser cúmplice, mas sim um espaço de denúncia, de comunidade e de luta.",
 
 
