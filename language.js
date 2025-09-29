@@ -13,7 +13,7 @@ const translations = {
   "donation_paypal": "PayPal",
   "donation_mbway": "MB WAY",
   "donation_proceed": "Prosseguir",
-"donation_info": "100% dos fundos angariados vão para famílias em Gaza. Começamos por apoiar quatro famílias em situações de emergência crítica. Depois, por cada €100 adicionais angariados, poderemos apoiar mais uma família.\n\nTodas as doações são processadas através da Associação Juvenil CulturMais, NIPC 510862110 (mais informações nas FAQs).",
+"donation_info": "100% dos fundos angariados vão para famílias em Gaza.\n\nO valor angariado será atualizado diariamente (pode haver um atraso de até 24h após a doação). Os fundos serão processados pela Associação Juvenil CulturMais, NIPC 510862110 (mais info nas FAQs).",
 
 "mission_title": "Missão",
 "mission_text_1": "A Liberation Station nasceu da urgência de denunciar a forma como Israel e as suas estruturas de apoio utilizam a cultura e a música para lavar a sua imagem internacional e normalizar um genocídio em curso. Esta estratégia de branqueamento não é nova, já a vimos em eventos recentes, mas vimos também como a ação coletiva e o boicote podem desmontá-la.",
