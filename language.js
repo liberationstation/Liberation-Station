@@ -11,11 +11,10 @@ const translations = {
   "donation_title": "Doar",
   "donation_other": "Outro valor",
   "donation_paypal": "PayPal",
-  "donation_mbway": "MB WAY",
-  "donation_proceed": "Prosseguir",
-"donation_info": "100% dos fundos angariados vão para famílias em Gaza. O valor angariado será atualizado diariamente (pode haver um atraso de até 24h após a doação). Os fundos serão processados pela Associação Juvenil CulturMais, NIPC 510862110 (mais info em FAQS).",
 
 
+
+"donation_info": "100% dos fundos angariados vão para famílias em Gaza. O valor angariado será atualizado diariamente (pode haver um atraso de até 24h após a doação). Os fundos serão processados pela Associação Juvenil CulturMais, NIPC 510862110 (mais info em FAQ).",
 
 "mission_title": "Missão",
 "mission_text_1": "A Liberation Station nasceu da urgência de denunciar a forma como Israel e as suas estruturas de apoio utilizam a cultura e a música para lavar a sua imagem internacional e normalizar um genocídio em curso. Esta estratégia de branqueamento não é nova, já a vimos em eventos recentes, mas vimos também como a ação coletiva e o boicote podem desmontá-la.",
@@ -89,7 +88,7 @@ const translations = {
 "faq_q9": "Posso doar mesmo sem ir aos eventos?",
 "faq_a9": "Sim! Basta usar os métodos de pagamento disponíveis no site. Cada contribuição, por menor que seja, tem impacto direto.",
 "faq_q10": "Posso doar diretamente às famílias sem passar por vocês?",
-"faq_a10": "Sim. Queremos ser totalmente transparentes. As famílias que estamos a apoiar têm campanhas pessoais no GoFundMe e plataformas semelhantes que podes consultar aqui. Há também coletivos e organizações a fazer trabalho fundamental no terreno e todas as contribuições fazem a diferença: Seeds of Hope, Gaza Soup Kitchen, Sameer Project, etc. [inserir as 4 ligações já presentes aqui]",
+"faq_a10": "Sim. Queremos ser totalmente transparentes. As famílias que estamos a apoiar têm campanhas pessoais no GoFundMe e plataformas semelhantes que podes consultar aqui. Há também coletivos e organizações a fazer trabalho fundamental no terreno e todas as contribuições fazem a diferença: Seeds of Hope, Gaza Soup Kitchen, Sameer Project, etc.",
 "faq_q11": "Como posso ajudar além de doar?",
 "faq_a11": "Divulga a Liberation Station, partilha a nossa campanha de angariação de fundos nas redes sociais e vem aos nossos eventos. No entanto, para além de as doações serem importantes e fazerem a diferença, apelamos também à necessidade fundamental de haver mobilização e ação política, participar em manifestações, pressionar instituições, envolver-nos em coletivos e manter viva a denúncia pública do genocídio em curso. A solidariedade constrói-se coletivamente: na música, na rua e na luta.",
 
@@ -131,3 +130,4 @@ langBtn.addEventListener('click', () => {
     currentLang = 'en';
   }
 });
+
