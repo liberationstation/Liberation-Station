@@ -58,8 +58,9 @@ header {
   align-items: center;
 }
 .logo img {
-  width: 147px;
-  height: 44px;
+  height: 48px;     
+  width: auto;       
+  max-width: 100%;   
 }
 
 /* MIDDLE: NAV LINKS */
@@ -1036,8 +1037,9 @@ button, button:focus, button:active {
   }
 
   .logo img {
-    width: 93px;
-    height: 33px;
+  height: 33px;     
+  width: auto;       
+  max-width: 100%;   
   }
 
   .donate-btn-header {
