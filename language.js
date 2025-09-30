@@ -15,6 +15,7 @@ const translations = {
 
 
 "donation_info": "100% dos fundos angariados vão para famílias em Gaza. O valor angariado será atualizado diariamente (pode haver um atraso de até 24h após a doação). Os fundos serão processados pela Associação Juvenil CulturMais, NIPC 510862110 (mais info em FAQ).",
+"donation_raised": "Arrecadado: 0€",
 
 "mission_title": "Missão",
 "mission_text_1": "A Liberation Station nasceu da urgência de denunciar a forma como Israel e as suas estruturas de apoio utilizam a cultura e a música para lavar a sua imagem internacional e normalizar um genocídio em curso. Esta estratégia de branqueamento não é nova, já a vimos em eventos recentes, mas vimos também como a ação coletiva e o boicote podem desmontá-la.",

@@ -165,6 +165,19 @@ nav a:hover {
     font-family: 'DeviceTM', sans-serif;
 }
 
+.donation-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.donation-raised {
+  font-size: 24px;
+  letter-spacing: 0.05em;
+  font-family: 'DeviceTM', sans-serif;
+  margin: 0;
+}
+
 .donation-info {
   font-size: 9px;
   text-align: justify;
