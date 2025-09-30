@@ -311,6 +311,7 @@ nav a:hover {
 .mission-right {
   justify-content: flex-start; 
 }
+
 .mission-right img {
   width: 100%;
   height: 100%; 
@@ -319,7 +320,23 @@ nav a:hover {
   border-radius: 0px; 
 }
 
+.slider {
+  width: 100%;
+  overflow: hidden;
+}
 
+.slides {
+  display: flex;
+  width: 400%;          /* 4 slides */
+  transition: transform 0.5s ease-in-out;
+}
+
+.slides img {
+  width: 25%;           /* 1/4 of .slides */
+  height: auto;         /* keeps original image ratio */
+  object-fit: cover;
+  display: block;
+}
 
 
 

@@ -59,3 +59,13 @@ donateBtn.addEventListener('click', () => {
 
 
 
+// slider js
+
+const slides = document.querySelector('.slides');
+let index = 0;
+const total = slides.children.length;
+
+setInterval(() => {
+  index = (index + 1) % total;
+  slides.style.transform = `translateX(-${index * 25}%)`;
+}, 3000); 
