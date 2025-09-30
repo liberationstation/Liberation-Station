@@ -104,6 +104,10 @@ nav a:hover {
   cursor: pointer;
 }
 
+.donate-btn-header:hover {
+  background-color: #e64f3b;
+}
+
 /* FIRST SECTION BELOW HEADER */
 .first-section {
   width: 100%;
@@ -394,6 +398,11 @@ nav a:hover {
   border: 1px solid black;
   cursor: pointer;
   font-family: 'DeviceTM', sans-serif;
+}
+
+.tickets-btn:hover {
+  background-color: #191919;
+  color:#249A78;
 }
 
 /* EVENTS GRID */
