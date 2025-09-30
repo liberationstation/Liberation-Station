@@ -68,4 +68,4 @@ const total = slides.children.length;
 setInterval(() => {
   index = (index + 1) % total;
   slides.style.transform = `translateX(-${index * 25}%)`;
-}, 3000); 
+}, 2000); 
