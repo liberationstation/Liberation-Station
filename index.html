@@ -36,7 +36,11 @@
     <!-- Right: Buttons -->
     <div class="header-buttons">
       <button class="pt-btn">PT</button>
-      <button class="donate-btn-header" data-translate="header_donate">Donate</button>
+          <div class="donate-btn-header-container">
+        <a href="https://www.paypal.com/donate/?hosted_button_id=Q2MTPEU2AR382" target="_blank">
+          <button class="donate-btn-header" type="button">Donate</button>
+        </a>
+      </div>
     </div>
   </header>
 
@@ -54,7 +58,7 @@
     <div class="donation-box">
     <div class="donation-header">
     <h2 data-translate="donation_title">Donate</h2>
-    <h2 data-translate="donation_raised" class="donation-raised">Raised: 320€</h2>
+    <h2 data-translate="donation_raised" class="donation-raised">Raised: 267€</h2>
   </div>
 <p class="donation-info" data-translate="donation_info">
   100% of all funds raised go to families in Gaza. 
@@ -62,43 +66,17 @@
   All donations are processed through Associação Juvenil CulturMais, NIPC 510862110 (more info in the <a href="#faq" class="faq-link" data-translate="faq_link">FAQs</a>).
 </p>
 
-
-      <!-- Amount selection -->
-      <div class="donation-buttons">
-        <button data-amount="5">5€</button>
-        <button data-amount="10">10€</button>
-        <button data-amount="20">20€</button>
-        <button data-amount="50">50€</button>
-        <button data-amount="100">100€</button>
-        <button data-amount="200">200€</button>
+      <!-- Custom PayPal Button -->
+      <div class="donation-button-container">
+        <a href="https://www.paypal.com/donate/?hosted_button_id=Q2MTPEU2AR382" target="_blank">
+          <button class="donate-btn-custom" type="button">Donate</button>
+        </a>
       </div>
 
-      <!-- Spacer below buttons -->
-      <div class="donation-spacer"></div>
-
-      <!-- Custom amount input -->
-      <div class="custom-amount-container">
-        <label for="customAmount" data-translate="donation_other">Other amount</label>
-        <input type="number" id="customAmount" placeholder="€" min="1" />
-      </div>
-
-      <!-- Spacer below buttons -->
-      <div class="donation-spacer"></div>
-
-      <!-- Payment method selection 
-      <div class="payment-methods">
-        <button class="payment-btn" id="paypal-btn" data-translate="donation_paypal">PayPal</button>
-        <button class="payment-btn" id="mbway-btn" data-translate="donation_mbway">MB WAY</button>
-      </div>-->
-
-      <div id="paypal-button-container" style="width: 100%;"></div>
-
-      <!-- Donate button 
-      <button id="donate-btn" class="donate-btn" data-translate="donation_proceed">Proceed</button>
-      -->
     </div>
   </div>
 </section>
+
 
 
   
