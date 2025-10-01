@@ -52,7 +52,7 @@ const translations = {
   "e6_date": "3 DE OUTUBRO",
   "e6_location": "COIMBRA",
   "e6_name": "REPÚBLICA SPREIT-Ó-FURO",
-  "e6_desc": "Encontre-nos no Real República Spreit'-o'-Furo, em Coimbra, para um dia repleto de atividades. Desde Paulo Guerreiro e Ascenscia até aos sets ambiente de David Rodrigues e uma palestra paralela, o evento prolonga-se pela noite com Sibilo e Maria Amor b2b Shcuro. Cada bilhete vendido apoia famílias em Gaza.",
+  "e6_desc": "Encontre-nos no Real República Spreit'-o'-Furo, em Coimbra, para um dia repleto de atividades. Desde Paulo Guerreiro e Ascenscia até aos sets ambiente de David Rodrigues e uma palestra paralela, o evento prolonga-se pela noite com Sibilo e Maria Amor b2b Shcuro. Cada doação volutária apoia famílias em Gaza.",
   "e7_date": "3 DE OUTUBRO",
   "e7_location": "OPORTO",
   "e7_name": "PASSOS MANUEL",
