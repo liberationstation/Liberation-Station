@@ -15,7 +15,7 @@ const translations = {
 
 
 "donation_info": "100% dos fundos angariados vão para famílias em Gaza. O valor angariado será atualizado diariamente (pode haver um atraso de até 24h após a doação). Os fundos serão processados pela Associação Juvenil CulturMais, NIPC 510862110 (mais info em FAQ).",
-"donation_raised": "Arrecadado: 635€",
+"donation_raised": "Arrecadado: 903€",
 "donate_button": "Doar",
 
 "mission_title": "Missão",
